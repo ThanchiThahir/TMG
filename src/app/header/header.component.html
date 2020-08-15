@@ -1,0 +1,16 @@
+<div class="header-selection">
+<nav class="mb-0">
+    <div class="logo">
+        <div class="logo-selection">
+        <label class="mb-0">TMG</label> 
+        </div>
+    </div>
+    <div class="nav-container">
+        <ul class="mb-0">
+            <li *ngFor = "let menuList of headerMenu" [routerLink]="menuList.menuNavlink">
+                {{menuList.menuName}}
+            </li>
+        </ul>
+    </div>
+</nav>
+</div>
